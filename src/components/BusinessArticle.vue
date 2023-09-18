@@ -12,18 +12,21 @@
         title="Grow your business"
         content="we always to help your company to grow with us."
         detailsDefault="Learn More"
+        bgColor="#FFE9D6"
       />
       <BusinessProps
         :image="'/image/stats (1) 1.svg'"
         title="Drive more sales"
         content="Every company that we handle we always drive more sales.."
         detailsGreen="Learn More"
+        bgColor="#EAFFE7"
       />
       <BusinessProps
         :image="'/image/discount (2) 1.svg'"
         title="Handle by experts"
         content="You don’t need to worry, We are experts.."
         detailsDefault="Learn More"
+        bgColor="#FFFCE0"
       />
     </div>
   </div>

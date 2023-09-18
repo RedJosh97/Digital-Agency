@@ -3,8 +3,8 @@
     <ProductInfo title="Testimonial" subTitle="What customers says about us">
       <template #right-section>
         <div class="select-button">
-          <button><i class="las la-chevron-left"></i></button>
-          <button><i class="las la-chevron-right"></i></button>
+          <i class="las la-chevron-left left-icon"></i>
+          <i class="las la-chevron-right right-icon"></i>
         </div>
       </template>
     </ProductInfo>
@@ -27,6 +27,12 @@
         name="John Peter"
         description="React Developer"
       />
+      <TestimonialCards
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+        :profileImage="'/public/image/Ellipse 6-1.png'"
+        name="John Peter"
+        description="React Developer"
+      />
     </div>
   </div>
 </template>
@@ -41,17 +47,15 @@ export default {
 }
 </script>
 
-<style scoped>
-.select-button button {
-  border: none;
-  outline: none;
-}
-.las {
-  margin: 0 5px;
+<style>
+.select-button {
+  display: flex;
+  gap: 16px;
 }
 
-.select-button i {
-  padding: 13px;
+.left-icon,
+.right-icon {
+  padding: 20px;
   border-radius: 50px;
 }
 
@@ -68,8 +72,16 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 26px;
+  gap: 30px;
+  height: auto;
+  overflow-x: scroll;
 }
+.testimonial-cards::-webkit-scrollbar-thumb {
+  height: 8px;
+  background: #04b200;
+  border-radius: 15px;
+}
+
 .testimonial-section {
   background: #f1f2fe;
   padding: 3em 6em;

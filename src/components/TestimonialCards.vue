@@ -7,7 +7,7 @@
 
     <div class="profile-attribute">
       <div class="profile-cover">
-        <img :src="profileImage" />
+        <img class="profile-cover-img" :src="profileImage" />
         <div>
           <p>{{ name }}</p>
           <small>{{ description }}</small>
@@ -56,7 +56,8 @@ export default {
 <style scoped>
 .card {
   background: #fff;
-  width: 290px;
+  width: 496px;
+  min-width: 280px;
   border-radius: 10px;
   padding: 0.4em 1em;
   gap: 26px;
@@ -75,6 +76,10 @@ export default {
 }
 .profile-cover {
   margin-top: 12px;
+}
+
+.profile-cover-img {
+  margin-right: 17px;
 }
 .profile-attribute {
   display: flex;
